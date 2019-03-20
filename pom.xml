@@ -1,0 +1,41 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.princesslana</groupId>
+  <artifactId>smalld-gettingstarted</artifactId>
+  <version>0-SNAPSHOT</version>
+
+  <properties>
+    <lib.smalld.version>0.0.4</lib.smalld.version>
+    <lib.minimal-json.version>0.9.5</lib.minimal-json.version>
+    <plugin.exec.version>1.6.0</plugin.exec.version>
+
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.github.princesslana</groupId>
+      <artifactId>smalld</artifactId>
+      <version>${lib.smalld.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.eclipsesource.minimal-json</groupId>
+      <artifactId>minimal-json</artifactId>
+      <version>${lib.minimal-json.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>${plugin.exec.version}</version>
+        <configuration>
+          <mainClass>com.github.princesslana.smalld.start.PingBot</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
