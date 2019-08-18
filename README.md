@@ -1,5 +1,5 @@
 # SmallD: Getting Started
 
-Code from the SmallD Getting Started guide.
+Code from the SmallD Getting Started guides.
 
-Please visit the guide at https://princesslana.github.io/smalld/getting_started.html
+Please visit the docs at https://smalld.readthedocs.io/
